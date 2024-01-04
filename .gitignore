@@ -162,5 +162,11 @@ cython_debug/
 
 
 ##############################
-/.quarto/
+**/*.quarto/
+.doit.db
+ked2024/lectures/notes/
+package-lock.json
+package.json
+
+
 

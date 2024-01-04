@@ -167,6 +167,7 @@ cython_debug/
 ked2024/lectures/notes/
 package-lock.json
 package.json
+ked2024/.gitignore
 
 
 

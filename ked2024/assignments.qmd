@@ -6,16 +6,16 @@ layout: page
 You have to submit two assignments to complete the seminar successfully. The purpose of the assignments is not making the course hard to pass but rather to foster your engagement with the covered topics. As you like, you may prefer to work in teams to discuss different approaches. Nonetheless, each student has to come up with their own solution and submit it before the deadline.
 
 | \#  | Topic                                                                                                     | Published     | Deadline (by midnight) | Solution                                                                                                                             |
-|-------------|-------------|-------------|-----------------|----------------|
-| 1   | [Data Wrangling](https://aflueckiger.github.io/KED2023/assignments/assignment_1/KED2023_assignment_1.pdf) | 16 March 2023 | 23 March 2023          | [Example Solution](https://github.com/aflueckiger/KED2023/blob/main/docs/assignments/assignment_1/flueckiger_KED2023_1_solutions.sh) |
-| 2   | [Regex NLP](https://aflueckiger.github.io/KED2023/assignments/assignment_2/KED2023_assignment_2.pdf)      | 30 March 2023 | 06 April 2023-         | [Example Solution](https://github.com/aflueckiger/KED2023/blob/main/docs/assignments/assignment_2/flueckiger_KED2023_2_solutions.sh) |
+|---------------|---------------|---------------|---------------|---------------|
+| 1   | [Data Wrangling](https://aflueckiger.github.io/KED2024/assignments/assignment_1/KED2024_assignment_1.pdf) | 16 March 2024 | 23 March 2024          | [Example Solution](https://github.com/aflueckiger/KED2024/blob/main/docs/assignments/assignment_1/flueckiger_KED2024_1_solutions.sh) |
+| 2   | [Regex NLP](https://aflueckiger.github.io/KED2024/assignments/assignment_2/KED2024_assignment_2.pdf)      | 30 March 2024 | 06 April 2024-         | [Example Solution](https://github.com/aflueckiger/KED2024/blob/main/docs/assignments/assignment_2/flueckiger_KED2024_2_solutions.sh) |
 
 ## Formal Instructions
 
 Your submission is a single script, meaning that is readily executable, and is named as follows:
 
--   Bash scripts: `SURNAME_KED2023_NR.sh`
--   Python scripts: `SURNAME_KED2023_NR.py`
+-   Bash scripts: `SURNAME_KED2024_NR.sh`
+-   Python scripts: `SURNAME_KED2024_NR.py`
 
 The script follows the order of the tasks in the assignment. In addition to the commands you have used in your solution, you also provide a short, yet concise explanation to your solution. You should include these comments directly in the script by starting the line with `#`.
 
@@ -77,7 +77,7 @@ The only requirement is to complement your claims with some quantitative facts a
 -   [Historical semantic of `performance` by University of Zurich](materials/mini_projects/2023/miniproject_2023_performance.pdf), Denise Göldlin, Emma Notter, Melanie Meyer, 2023
 -   [Self-portrayal of Incels](materials/mini_projects/2023/miniproject_2023_incels.pdf), Irfete Iseni, Asia Petrino, 2023
 -   [Communication of sustainability of Swiss supermarkets](materials/mini_projects/2023/miniproject_2023_sustainability.pdf), Rebecca Ferraro & Xhoana Hasanaj, 2023
--   [Gender differences in 1 August speeches](materials/mini_projects/2022_gender_differences/KED2023_presentation.pdf) \[[Code](https://github.com/aflueckiger/KED2023/tree/main/KED2023/materials/mini_projects/2022_gender_differences)\], Dario Haab, Valentina Meyer, Nils Brun, 2022
+-   [Gender differences in 1 August speeches](materials/mini_projects/2022_gender_differences/KED2024_presentation.pdf) \[[Code](https://github.com/aflueckiger/KED2024/tree/main/KED2024/materials/mini_projects/2022_gender_differences)\], Dario Haab, Valentina Meyer, Nils Brun, 2022
 
 # Optional Seminar Paper
 
@@ -85,7 +85,7 @@ You are welcomed to write an optional seminar paper (Hauptseminararbeit) for whi
 
 Due to the practical foundation of this seminar, you are well-prepared to subsequently apply computational text methods in a personal project. Although this is not a requirement, you may want to turn your mini-project into a seminar paper by deepening your empirical inquiry.
 
-Students planning to write a seminar paper should send me an email with a short outline of their research idea until **15 May 2023** at the latest. When you would like to discuss your idea in person, feel free to do so any time after the seminar.
+Students planning to write a seminar paper should send me an email with a short outline of their research idea until **15 May 2024** at the latest. When you would like to discuss your idea in person, feel free to do so any time after the seminar.
 
 Requirements for the seminar paper (Hauptseminararbeit):
 
@@ -93,4 +93,4 @@ Requirements for the seminar paper (Hauptseminararbeit):
 -   Use any computational methods to analyze your data.
 -   Your paper has a theoretical question guiding your methodical approach. In other words, methods are a means, not an end in themselves.
 -   Formal: 15 pages (A4), 12 pt Times New Roman, 3cm margin, 1.5 line spacing.
--   Deadline for submitting the final paper: **31 August 2023**.
+-   Deadline for submitting the final paper: **31 August 2024**.

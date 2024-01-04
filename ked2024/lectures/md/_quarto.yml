@@ -1,6 +1,8 @@
 project:
   output-dir: ../html
 
+from: markdown+emoji
+bibliography: /home/alex/zotero.bib
 center: true
 date-format: "DD MMMM YYYY"
 lang: en-US
@@ -8,6 +10,7 @@ title-slide-attributes:
   data-background-image: ../images/UNILU_logo_EN.png
   data-background-size: 10%
   data-background-position: 2% 2%
+
 format:
   revealjs:
     output-dir: ../html
@@ -27,4 +30,6 @@ format:
     theme: [default, ../resources/custom_style_reveal.scss]
     highlight-style: github-dark
     code-line-numbers: false
+    view: scroll
+    scrollProgress: true
 

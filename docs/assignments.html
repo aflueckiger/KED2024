@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -162,12 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#formal-instructions" id="toc-formal-instructions" class="nav-link active" data-scroll-target="#formal-instructions">Formal Instructions</a>
-  <ul class="collapse">
-  <li><a href="#bash" id="toc-bash" class="nav-link" data-scroll-target="#bash">Bash</a></li>
-  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
-  </ul></li>
-  <li><a href="#mini-project" id="toc-mini-project" class="nav-link" data-scroll-target="#mini-project">Mini-Project</a>
+  <li><a href="#mini-project" id="toc-mini-project" class="nav-link active" data-scroll-target="#mini-project">Mini-Project</a>
   <ul class="collapse">
   <li><a href="#inspiring-student-projects" id="toc-inspiring-student-projects" class="nav-link" data-scroll-target="#inspiring-student-projects">Inspiring Student Projects</a></li>
   </ul></li>
@@ -195,7 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>You have to submit two assignments to complete the seminar successfully. The purpose of the assignments is not making the course hard to pass but rather to foster your engagement with the covered topics. As you like, you may prefer to work in teams to discuss different approaches. Nonetheless, each student has to come up with their own solution and submit it before the deadline.</p>
+<p>You have to submit two assignments to complete the seminar successfully. The purpose of the assignments is not to make the course hard to pass but rather to foster your engagement with the topics covered.</p>
 <table class="table">
 <thead>
 <tr class="header">
@@ -209,73 +170,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td><a href="https://aflueckiger.github.io/KED2024/assignments/assignment_1/KED2024_assignment_1.pdf">Data Wrangling</a></td>
-<td>16 March 2024</td>
-<td>23 March 2024</td>
-<td><a href="https://github.com/aflueckiger/KED2024/blob/main/docs/assignments/assignment_1/flueckiger_KED2024_1_solutions.sh">Example Solution</a></td>
+<td><a href="assignments/assignment_1/ked2024_assignment_1.pdf">Experimenting with LLMs</a></td>
+<td>22 February 2024</td>
+<td>1 March 2024</td>
+<td>(individiual feedback)</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td><a href="https://aflueckiger.github.io/KED2024/assignments/assignment_2/KED2024_assignment_2.pdf">Regex NLP</a></td>
-<td>30 March 2024</td>
-<td>06 April 2024-</td>
-<td><a href="https://github.com/aflueckiger/KED2024/blob/main/docs/assignments/assignment_2/flueckiger_KED2024_2_solutions.sh">Example Solution</a></td>
+<td>Word Counts using Python</td>
+<td>11 April 2024</td>
+<td>19 April 2024</td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
-<section id="formal-instructions" class="level2">
-<h2 class="anchored" data-anchor-id="formal-instructions">Formal Instructions</h2>
-<p>Your submission is a single script, meaning that is readily executable, and is named as follows:</p>
-<ul>
-<li>Bash scripts: <code>SURNAME_KED2024_NR.sh</code></li>
-<li>Python scripts: <code>SURNAME_KED2024_NR.py</code></li>
-</ul>
-<p>The script follows the order of the tasks in the assignment. In addition to the commands you have used in your solution, you also provide a short, yet concise explanation to your solution. You should include these comments directly in the script by starting the line with <code>#</code>.</p>
-<p>Please use the following examples as template:</p>
-<section id="bash" class="level3">
-<h3 class="anchored" data-anchor-id="bash">Bash</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">##################################################</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">### assignment 1</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">### Seminar: The ABC of Computational Text Analysis</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">### University of Lucerne</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">##################################################</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">### Task 1.1</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"this is a test"</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># solution: echo prints out the provided text in the command-line </span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">### Task 1.2</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"test"</span> <span class="kw">|</span> <span class="fu">wc</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># solution: wc counts the lines, words and characters. </span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># The argument -n is necessary to omit the trailing new-line symbol.</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># "test" has 4 characters.</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="python" class="level3">
-<h3 class="anchored" data-anchor-id="python">Python</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env python3</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">##################################################</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">### assignment 1</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">### Seminar: The ABC of Computational Text Analysis</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">### University of Lucerne</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">##################################################</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">### Task 1.1</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, World"</span>)</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># outputs the provided string to the prompt</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
 <section id="mini-project" class="level1">
 <h1>Mini-Project</h1>
-<p>You conduct a small computational text analysis and present the results in the final session. To give as many options as possible, you are free to choose your research question as well as computational methods and data you are going to use. It is certainly more fun when you work with data from your area of interest.</p>
-<p>Again, the aim of this project is not to overwhelm students with too ambitious requirements. It should be the other way around. You will have as much freedom as you need to engage with your data creatively. I will be glad when you realize that your knowledge is already good enough to perform powerful analyses.</p>
-<p>The only requirement is to complement your claims with some quantitative facts about the data, which you can freely choose. You may work in teams of two.</p>
+<p>You conduct a small computational text analysis and present the results in the final session. To give as many options as possible, you are free to choose your research question as well as the computational methods and data you will use. Working with data from your area of interest is certainly more fun.</p>
+<p>This project doesn’t aim to overwhelm students with requirements that are too ambitious. It should be the other way around. You will have as much freedom as you need to engage with your data creatively. The goal is that you realize that your knowledge is already good enough to perform powerful analyses. Complementing your claims with quantitative facts about the data is the only requirement.</p>
+<p>More information will be provided later in the course.</p>
 <section id="inspiring-student-projects" class="level2">
 <h2 class="anchored" data-anchor-id="inspiring-student-projects">Inspiring Student Projects</h2>
 <ul>
@@ -304,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

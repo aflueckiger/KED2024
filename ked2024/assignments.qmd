@@ -3,73 +3,20 @@ title: 'Assignments'
 layout: page
 ---
 
-You have to submit two assignments to complete the seminar successfully. The purpose of the assignments is not making the course hard to pass but rather to foster your engagement with the covered topics. As you like, you may prefer to work in teams to discuss different approaches. Nonetheless, each student has to come up with their own solution and submit it before the deadline.
+You have to submit two assignments to complete the seminar successfully. The purpose of the assignments is not to make the course hard to pass but rather to foster your engagement with the topics covered.
 
-| \#  | Topic                                                                                                     | Published     | Deadline (by midnight) | Solution                                                                                                                             |
+| \#  | Topic                                                                        | Published        | Deadline (by midnight) | Solution               |
 |---------------|---------------|---------------|---------------|---------------|
-| 1   | [Data Wrangling](https://aflueckiger.github.io/KED2024/assignments/assignment_1/KED2024_assignment_1.pdf) | 16 March 2024 | 23 March 2024          | [Example Solution](https://github.com/aflueckiger/KED2024/blob/main/docs/assignments/assignment_1/flueckiger_KED2024_1_solutions.sh) |
-| 2   | [Regex NLP](https://aflueckiger.github.io/KED2024/assignments/assignment_2/KED2024_assignment_2.pdf)      | 30 March 2024 | 06 April 2024-         | [Example Solution](https://github.com/aflueckiger/KED2024/blob/main/docs/assignments/assignment_2/flueckiger_KED2024_2_solutions.sh) |
-
-## Formal Instructions
-
-Your submission is a single script, meaning that is readily executable, and is named as follows:
-
--   Bash scripts: `SURNAME_KED2024_NR.sh`
--   Python scripts: `SURNAME_KED2024_NR.py`
-
-The script follows the order of the tasks in the assignment. In addition to the commands you have used in your solution, you also provide a short, yet concise explanation to your solution. You should include these comments directly in the script by starting the line with `#`.
-
-Please use the following examples as template:
-
-### Bash
-
-``` bash
-#!/bin/bash
-
-##################################################
-### assignment 1
-### Seminar: The ABC of Computational Text Analysis
-### University of Lucerne
-##################################################
-
-### Task 1.1
-echo "this is a test"
-# solution: echo prints out the provided text in the command-line 
-
-### Task 1.2
-echo -n "test" | wc
-# solution: wc counts the lines, words and characters. 
-# The argument -n is necessary to omit the trailing new-line symbol.
-# "test" has 4 characters.
-
-...
-```
-
-### Python
-
-``` python
-#!/usr/bin/env python3
-
-##################################################
-### assignment 1
-### Seminar: The ABC of Computational Text Analysis
-### University of Lucerne
-##################################################
-
-### Task 1.1
-print("Hello, World")
-# outputs the provided string to the prompt
-
-...
-```
+| 1   | [Experimenting with LLMs](assignments/assignment_1/ked2024_assignment_1.pdf) | 22 February 2024 | 1 March 2024           | (individiual feedback) |
+| 2   | Word Counts using Python                                                     | 11 April 2024    | 19 April 2024          | \-                     |
 
 # Mini-Project
 
-You conduct a small computational text analysis and present the results in the final session. To give as many options as possible, you are free to choose your research question as well as computational methods and data you are going to use. It is certainly more fun when you work with data from your area of interest.
+You conduct a small computational text analysis and present the results in the final session. To give as many options as possible, you are free to choose your research question as well as the computational methods and data you will use. Working with data from your area of interest is certainly more fun.
 
-Again, the aim of this project is not to overwhelm students with too ambitious requirements. It should be the other way around. You will have as much freedom as you need to engage with your data creatively. I will be glad when you realize that your knowledge is already good enough to perform powerful analyses.
+This project doesn't aim to overwhelm students with requirements that are too ambitious. It should be the other way around. You will have as much freedom as you need to engage with your data creatively. The goal is that you realize that your knowledge is already good enough to perform powerful analyses. Complementing your claims with quantitative facts about the data is the only requirement.
 
-The only requirement is to complement your claims with some quantitative facts about the data, which you can freely choose. You may work in teams of two.
+More information will be provided later in the course.
 
 ## Inspiring Student Projects
 

@@ -3,7 +3,8 @@ title: 'The ABC of Computational Text Analysis'
 subtitle: "BA Seminar, Spring 2024, University of Lucerne"
 layout: default
 author: Alex Flückiger
-date: "2023-05-25"
+date: "2024-02-08"
+sidebar: false
 ---
 
 ![](_images/background.png)
@@ -14,10 +15,9 @@ This seminar focuses on the computational processing of digital and digitized te
 
 Along the way, we deal with questions like these:
 
--   How can texts be quantitatively exploited to complement the qualitative content analysis?
--   What are regular expressions, and why are they so powerful in the context of computational text analysis?
--   How to download data automatically from websites and process *en masse*?
--   How can historical texts be extracted from PDFs using Optical Character Recognition (OCR)?
+-   How can extensive collections of texts be evaluated quantitatively in order to strengthen content analysis?
+-   How has the discourse on a topic changed over time and how does communication between various actors differ?
+-   What are regular expressions and why are they so useful for text analytical applications?
 
 [{{< fa external-link >}} Go to UniLu website](https://portal.unilu.ch/details?code=FS241589)
 

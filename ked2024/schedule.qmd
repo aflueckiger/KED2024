@@ -8,7 +8,7 @@ We have 12 seminar sessions together.
 The plan below is provisional. I am happy to adapt the topics, as well as the schedule, to the needs and interests of the students. Likely, we will change some topics and orderings as we go.
 
 | Date             | Topic                                                                                                                |
-|---------------|---------------------------------------------------------|
+|-----------------|-------------------------------------------------------|
 | 22 February 2024 | [Introduction + Where is the digital revolution?](lectures.html#week-1-introduction-where-is-the-digital-revolution) |
 | 29 February 2024 | [Text as Data](lectures.html#week-2-text-as-data)                                                                    |
 | 07 March 2024    | [Setting up your Development Environment](lectures.html#week-3-setting-up-your-development-environment)              |

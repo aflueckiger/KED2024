@@ -9,11 +9,14 @@ project:
     - "KED2024_syllabus.pdf"
   render:
     - "*.qmd"
+  preview:
+    port: 3333
 
 website:
   title: "KED2024"
   site-url: https://aflueckiger.github.io/KED2024
   search: true
+  back-to-top-navigation: true
   navbar:
     left:
       - text: "Home"

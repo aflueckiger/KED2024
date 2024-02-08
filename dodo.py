@@ -141,7 +141,7 @@ def task_create_assignment():
             "file_dep": [infile],
             "actions": [
                 f"pandoc -f  markdown+rebase_relative_paths -o {outfile} {infile} \
-           -V urlcolor='[HTML]{{111bab}}' \
+            -V urlcolor='[HTML]{{111bab}}' \
             -V linkcolor='[HTML]{{111bab}}' \
             -V filecolor='[HTML]{{111bab}}' \
             -V geometry:margin=2.5cm \
@@ -163,7 +163,7 @@ def task_create_materials():
             "file_dep": [infile],
             "actions": [
                 f"pandoc -f  markdown+rebase_relative_paths -o {outfile} {infile} \
-           -V urlcolor='[HTML]{{111bab}}' \
+            -V urlcolor='[HTML]{{111bab}}' \
             -V linkcolor='[HTML]{{111bab}}' \
             -V filecolor='[HTML]{{111bab}}' \
             -V geometry:margin=2.5cm \

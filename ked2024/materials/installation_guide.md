@@ -15,7 +15,7 @@ toc-depth: 2
 
 This guide aims to ease setting up your development environment for Windows 11 and macOS. Depending on your operating system, you have to install additional components to program in Python and perform common data wrangling tasks in the command-line. The instructions cover the installation of the following components:
 
-- Python 3.10
+- Python 3
 - [VS Code Editor](https://code.visualstudio.com/)
 - various Bash tools 
 - [Tesseract](https://en.wikipedia.org/wiki/Tesseract_(software)) (Optical Character Recognition)
@@ -29,11 +29,13 @@ Before you proceed with the installation, back up your files[^backup] and make s
 - runs the most current version of your operating system (Windows, macOS). If not, update your system.
 - has at least 15 GB of free disk space.
 
-Keep in mind that you will not get *any* feedback in the command-line unless there is an issue. At first, the lack of feedback after a successful action may be confusing as it runs counter the general experience when working with graphical interfaces. However, the lack of feedback just means the command was executed as expected; thus, there is no need to bother you with further messages.
+**Keep in mind that you will not get *any* feedback in the command-line unless there is an issue.** At first, the lack of feedback after a successful action may be confusing as it runs counter the general experience when working with graphical interfaces. However, the lack of feedback just means the command was executed as expected; thus, there is no need to bother you with further messages.
 
-Let me know if you are struggling with any of the steps. 
+Let me know if you are struggling with any of the installation steps. 
 
 [^backup]: "Better save than sorry." Backing up files is a must and may save you tears as a computer is a delicate piece of hardware that does not live forever. Moreover, users are also prone to mess up files or software at any point. In these cases, you just want to go back one step and restore your data.
+
+\pagebreak
 
 # Installation Guide for macOS
 
@@ -87,19 +89,22 @@ Homebrew is a powerful package manager for macOS systems. With Homebrew, you can
    brew upgrade
    ```
 
-5. Once you’ve installed Homebrew, make Homebrew's Python the primary environment by setting the `PATH` variable. In a Terminal, run the following command to add a new `PATH` variable to the  `~/.profile` file:
+<!---
+
+
+2. Once you’ve installed Homebrew, make Homebrew's Python the primary environment by setting the `PATH` variable. In a Terminal, run the following command to add a new `PATH` variable to the  `~/.profile` file:
 
    ```bash
    echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.profile
    source ~/.profile
    ```
-   
 
-<!---
 
  https://stackoverflow.com/questions/5157678/how-do-i-use-brew-installed-python-as-the-default-python 
 
 https://github.com/Homebrew/discussions/discussions/476
+
+https://ahmadawais.com/python-not-found-on-macos-install-python-with-brew-fix-path/
 
 --->
 
@@ -118,7 +123,7 @@ Homebrew makes it easy to install Python 3.
 2. When Python 3 has been installed correctly on your system, you should see version 3.x after issuing the following command:
 
     ```bash
-    python --version
+    python3 --version
     ```
 
 Source: [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/starting/install3/osx/)
@@ -142,12 +147,18 @@ Source: [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/start
 
 Source: [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki)
 
-### wget
+### More tools
 
 1. Install the tool wget that allows you to retrieve content from web servers via the command-line with:
 
+   ```bash
+   brew install wget
+   
    ```
-    brew install wget
+
+2. Install poppler that allows you to render PDFs via the command-line:
+   ```bash
+   brew install poppler
    ```
 
 ## Install VS Code
@@ -185,6 +196,8 @@ To use the powerful Bash tools on your Windows computer, we install a Ubuntu Lin
    wsl --install -d Ubuntu
    ```
 
+   If something doesn't work, search for `Turn Windows feature on or off` in the menu, and ensure that `Windows Subsystem for Linux` is enabled (see @fig:figure_wsl). 
+
 2. Reboot your computer to complete the installation of WSL and Ubuntu.
 
 3. The installation should be completed automatically after the reboot. If not, you can launch Ubuntu from your Windows start menu. When you have any problems, let me know and I will gladly assist. It may require [additional configuration](https://askubuntu.com/questions/1264102/wsl-2-wont-run-ubuntu-error-0x80370102) of your BIOS.
@@ -215,10 +228,15 @@ To use the powerful Bash tools on your Windows computer, we install a Ubuntu Lin
    ls documents
    ```
 
-
 Source: [Microsoft](https://docs.microsoft.com/en-us/windows/wsl/install)
 
+
+
+![Ensure correct configuration](images/windows_wsl.png){#fig:figure_wsl width=40%}
+
 <!--- Credentials on the Ubuntu system in the virtual machine: user: student password: 1234 --->
+
+\pagebreak
 
 ## Install additional command-line tools
 
@@ -235,6 +253,13 @@ Source: [Microsoft](https://docs.microsoft.com/en-us/windows/wsl/install)
    ```bash
    sudo apt install python3-pip
    ```
+
+4. Install poppler that allows you to render PDFs via the command-line:
+   ```bash
+   sudo apt install poppler-utils
+   ```
+
+5. Close and reopen Ubuntu.
 
 
 ### Tesseract
@@ -268,7 +293,7 @@ Unless you have another favourite coding editor, install and customize VS Code e
    ext install ms-vscode-remote.vscode-remote-extensionpack
    ```
 
-4. In the left lower corner, you should now see a green label with `WSL: Ubuntu` (@fig:figure1). If not, press `F1`, select *WSL: New WSL Window* to connect the subsystem.
+4. In the left lower corner, you should now see a green label with `WSL: Ubuntu` (see @fig:figure1). If not, press `F1`, select *WSL: New WSL Window* to connect the subsystem.
 
 5. To make programming in Python easier, you should install two more extensions: VS Code Python extension and Tabnine. Launch again the *VS Code Quick Open* by pressing `CTRL`+`P`, paste the command, and press enter:
 
@@ -281,6 +306,8 @@ Unless you have another favourite coding editor, install and customize VS Code e
    ```
    ext install tabnine.tabnine-vscode
    ```
+
+​		You can ignore the sign-in request.
 
 Source: [Microsoft](https://code.visualstudio.com/docs/remote/wsl)
 
@@ -323,7 +350,7 @@ Using the dependency management `poetry`, we can install all the dependencies ne
 2. Install the dependency management for Python:
 
     ``` bash
-    python3 -m pip install poetry
+    curl -sSL https://install.python-poetry.org | python3 -
     ```
 
 3. Configure poetry to use the project directory for its virtual environment:
@@ -338,13 +365,17 @@ Using the dependency management `poetry`, we can install all the dependencies ne
     poetry install
     ```
 
+<!---  In case of PATH problems: export PATH="/home/$USER/.local/bin:$PATH" --->
+
+
+
 ## First Steps in Python
 
 As a kind of initiation ritual of coding, say hello to the programming world in Python and check if everything is installed successfully. 
 
 1. Open the VS Code editor.
 
-2. Windows only: Ensure that you connected to `WSL: Ubuntu` (green patch in the lower-left corner, see @fig:figure1)
+2. Windows only: Ensure that you connected to `WSL: Ubuntu` (green or blue patch in the lower-left corner, see @fig:figure1)
 
 3. Open the folder `KED2024` via the menu.
 
@@ -369,4 +400,4 @@ Congrats, you wrote your first little program in Python. It may not be as impres
 - [Python Principles](https://pythonprinciples.com)
 - [LearnPython](https://www.learnpython.org/en/Welcome)
 
-![Write your first Python script in VS Code](images/vs_code_hello_world.png){#fig:figure2 }
+![Write your first Python script in VS Code](images/vs_code_hello_world.png){#fig:figure2}

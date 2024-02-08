@@ -15,6 +15,7 @@ $presentation-font-size-root: 30px;
 
 https://colorate.azurewebsites.net/Color/0A66B4
 https://www.color-hex.com/color-palette/1294
+https://mycolor.space/?hex=%23FC2290&sub=1
 *********************************************/
 
 :root {
@@ -23,13 +24,15 @@ https://www.color-hex.com/color-palette/1294
     --red: #b5533c;
     --black: #1d1e1f;
     --grey: #4a4a4b;
-    --color-subtitle: #000073;
+    --color-subtitle: #0090ff;
     --color-headings: #00003F;
-    --color-small-headings: #5D5D9A;
-    --color-strong: #206C46;
-    --color-control: var(--color-small-headings);
-    --color-marker: #B6B6C8;
+    --color-small-headings: #806480;
+    --color-strong: #009f00;
+    --color-control: silver;
+    --color-marker: silver;
+    --pink: #fc2290;
 }
+
 
 
 /*********************************************
@@ -182,7 +185,7 @@ strong, b {
 }
 
 .reveal a:hover {
-  color: #8B0000;
+  color: var(--pink);
   text-shadow: none;
   border: none;
 }
@@ -266,17 +269,17 @@ section.has-dark-background code {
   .reveal blockquote p:first-child::before {
     font-size: 1.5em;
     font-family: Georgia, serif;
-    color: rgb(10, 102, 180);
+    color: var(--pink);
     content: '«'; }
 .reveal blockquote p:first-child::after {
   font-size: 1.5em;
   font-family: Georgia, serif;
-  color: rgb(10, 102, 180);
+  color: var(--pink);
   content: '»'; }
 
 
 .reveal blockquote cite{
-    color: rgb(10, 102, 180);
+    color: var(--pink);
     text-align: right;
     font-style: normal;
     font-size: 0.75em;

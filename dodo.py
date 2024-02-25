@@ -6,17 +6,12 @@ today = datetime.today().strftime("%d %B %Y")
 
 TITLE = "BA Seminar: The ABC of Computational Text Analysis"
 AUTHOR = "Alex Flückiger"
-
-## Location of CSS file
-CSSFILE = Path("/home/alex/KED2023/KED2023/lectures/resources/custom_style_reveal.scss")
-
-## Location of your working bibliography file
-BIBFILE = Path("/home/alex/zotero.bib")
-
 TITLE = "BA Seminar: The ABC of Computational Text Analysis"
 AUTHOR = "Alex Flückiger"
+COURSE_NAME = "KED2024"
 
-MAIN_DIR = Path(".").cwd() / "KED2023"
+MAIN_DIR = Path(".").cwd() / COURSE_NAME.lower()
+CSSFILE = MAIN_DIR / "lectures/resources/custom_style_reveal.scss"
 LECTURES_DIR = MAIN_DIR / "lectures"
 LECTURES_MD_DIR = LECTURES_DIR / "md"
 LECTURES_HTML_DIR = LECTURES_DIR / "html"
@@ -38,7 +33,6 @@ def task_prepare_dir():
         ASSIGNMENTS_DIR,
         MATERIALS_DIR,
     ):
-
         yield {
             "name": outdir,
             "actions": [f"mkdir -p {outdir}"],
@@ -54,7 +48,6 @@ def task_update_website():
 
 
 def task_create_html_slide():
-
     infiles = sorted(LECTURES_MD_DIR.glob("*.md"))
 
     for infile in infiles:
@@ -64,10 +57,7 @@ def task_create_html_slide():
             "name": infile,
             "file_dep": [infile, CSSFILE],
             "actions": [
-                f"cd {LECTURES_MD_DIR} && quarto render {infile.name} -o {outfile.name} \
-                -f markdown+emoji+strikeout --standalone --embed-resources \
-                --citeproc --bibliography {BIBFILE} \
-                 --quiet",
+                f"cd {LECTURES_MD_DIR} && quarto render {infile.name} -o {outfile.name} --quiet",
             ],
             "targets": [outfile],
             "title": show_cmd,
@@ -75,7 +65,6 @@ def task_create_html_slide():
 
 
 def task_create_pdf_slide():
-
     infiles = sorted(LECTURES_HTML_DIR.glob("*.html"))
 
     for infile in infiles:
@@ -85,8 +74,8 @@ def task_create_pdf_slide():
             "file_dep": [infile],
             "actions": [
                 # generate PDF from HTML
-                # use 4:3 format because of this bug: https://github.com/astefanutti/decktape/issues/151
-                f"decktape --size='1050x700' --load-pause 500 --pdf-author '{AUTHOR}' --pdf-title '{TITLE}' {infile} {outfile}",
+                # REMOVE? use 4:3 format because of this bug: https://github.com/astefanutti/decktape/issues/151 --size='1050x700'
+                f"decktape reveal --load-pause 500 --pdf-author '{AUTHOR}' --pdf-title '{TITLE}' {infile} {outfile}",
                 # compress
                 f"gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile={outfile}.temp {outfile}",
                 f"mv {outfile}.temp {outfile}",
@@ -95,24 +84,23 @@ def task_create_pdf_slide():
         }
 
 
-def task_create_lecture_notes():
-    infiles = sorted(LECTURES_MD_DIR.glob("*.md"))
+# def task_create_lecture_notes():
+#     infiles = sorted(LECTURES_MD_DIR.glob("*.md"))
 
-    for infile in infiles:
-        outfile = Path(LECTURES_NOTES_DIR) / infile.with_suffix(".notes.pdf").name
-        yield {
-            "name": infile,
-            "file_dep": [infile],
-            "actions": [
-                f"python lib/extract_notes.py < {infile} | pandoc -o {outfile} -f markdown --pdf-engine=xelatex -V geometry:margin=2cm",
-            ],
-            "targets": [outfile],
-        }
+#     for infile in infiles:
+#         outfile = Path(LECTURES_NOTES_DIR) / infile.with_suffix(".notes.pdf").name
+#         yield {
+#             "name": infile,
+#             "file_dep": [infile],
+#             "actions": [
+#                 f"python lib/extract_notes.py < {infile} | pandoc -o {outfile} -f markdown --pdf-engine=xelatex -V geometry:margin=2cm",
+#             ],
+#             "targets": [outfile],
+#         }
 
 
 def task_create_syllabus():
-
-    outfile = MAIN_DIR / "KED2023_syllabus.pdf"
+    outfile = MAIN_DIR / f"{COURSE_NAME}_syllabus.pdf"
 
     fdependencies = [
         MAIN_DIR / fname
@@ -122,7 +110,7 @@ def task_create_syllabus():
         "file_dep": fdependencies,
         "actions": [
             f"cd {MAIN_DIR} && \
-            cat index.qmd <(echo '[Go to Course Website](https://aflueckiger.github.io/KED2023/)' ) | grep -v '< fa' | sed '/<div/,/div>/d'> index.md.tmp && \
+            cat index.qmd <(echo '[Go to Course Website](https://aflueckiger.github.io/{COURSE_NAME}/)' ) | grep -v '< fa' | sed '/<div/,/div>/d'> index.md.tmp && \
             sed '5 a # Schedule' schedule.qmd > schedule.md.tmp && \
             sed '5 a # Lectures' lectures.qmd | grep -P -v '< .+ >' | sed -E 's/The slides .+ icon://g' > lectures.md.tmp && \
             sed '5 a # Assignments' assignments.qmd > assignments.md.tmp && \
@@ -144,7 +132,6 @@ def task_create_syllabus():
 
 
 def task_create_assignment():
-
     infiles = sorted(ASSIGNMENTS_DIR.glob("**/*.md"))
 
     for infile in infiles:
@@ -154,7 +141,7 @@ def task_create_assignment():
             "file_dep": [infile],
             "actions": [
                 f"pandoc -f  markdown+rebase_relative_paths -o {outfile} {infile} \
-           -V urlcolor='[HTML]{{111bab}}' \
+            -V urlcolor='[HTML]{{111bab}}' \
             -V linkcolor='[HTML]{{111bab}}' \
             -V filecolor='[HTML]{{111bab}}' \
             -V geometry:margin=2.5cm \
@@ -165,8 +152,8 @@ def task_create_assignment():
             # 'title': show_cmd
         }
 
-def task_create_materials():
 
+def task_create_materials():
     infiles = sorted(MATERIALS_DIR.glob("**/*.md"))
 
     for infile in infiles:
@@ -176,7 +163,7 @@ def task_create_materials():
             "file_dep": [infile],
             "actions": [
                 f"pandoc -f  markdown+rebase_relative_paths -o {outfile} {infile} \
-           -V urlcolor='[HTML]{{111bab}}' \
+            -V urlcolor='[HTML]{{111bab}}' \
             -V linkcolor='[HTML]{{111bab}}' \
             -V filecolor='[HTML]{{111bab}}' \
             -V geometry:margin=2.5cm \
@@ -187,6 +174,7 @@ def task_create_materials():
             "targets": [outfile],
             # 'title': show_cmd
         }
+
 
 def show_cmd(task):
     return "executing... %s" % task.actions[0]

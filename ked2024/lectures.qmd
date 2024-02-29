@@ -25,11 +25,10 @@ On the one hand, I present the goals and organization of the seminar. On the oth
 
 Computational text analysis comes with many challenges that are unique due to the fuzziness of natural language. In this session, we learn about its methodological foundation and conduct our first computational text analysis to understand how this translates into practice.
 
+[{{< fa desktop size=xl >}}](lectures/html/ked2024_02.html){target="_blank"} [{{< fa file-pdf size=xl >}}](lectures/pdf/ked2024_02.pdf){target="_blank"} [{{< fa brands github size=xl >}}](https://github.com/aflueckiger/KED2024/tree/main/ked2024/lectures/md/ked2024_02.md){target="_blank"}
 
 ```{=html}
 <!-- 
-[{{< fa desktop size=xl >}}](lectures/html/ked2024_02.html){target="_blank"} [{{< fa file-pdf size=xl >}}](lectures/pdf/ked2024_02.pdf){target="_blank"} [{{< fa brands github size=xl >}}](https://github.com/aflueckiger/KED2024/tree/main/ked2024/lectures/md/ked2024_02.md){target="_blank"}
-
 
 [<i class="fas fa-video"></i>](https://tube.switch.ch/videos/60dbcd87) 
 
@@ -45,7 +44,7 @@ Computational text analysis comes with many challenges that are unique due to th
 
 ## Week 3: Setting up your Development Environment
 
-The title says it all. We are getting ready for the practical part of the course: Programming. As installing Python and non-standard command-line tools may be tricky, we do this in class rather than doing it as homework. Moreover, I will also introduce some principles to organize research and jargon that guide your way in the programmer's brave new word.
+The title says it all. We are getting ready for the practical part of the course: Programming. As installing Python and non-standard command-line tools may be tricky, we dedicate time in class rather than doing it as homework only. Additionally, I will also introduce some jargon that guide your way in the programmer's brave new word.
 
 
 ```{=html}

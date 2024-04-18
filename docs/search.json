@@ -60,14 +60,14 @@
     "href": "lectures.html#week-7-working-with-data",
     "title": "Lectures",
     "section": "Week 7: Working with Data",
-    "text": "Week 7: Working with Data\nTo this point, you have acquired the skills to cut a document into pieces and, subsequently, extract, replace, and count any textual elements. Unless you have interesting data, these tools are neat but of no greater use. Thus, we turn to relevant data resources for social science. Given that you have plain text at hand, your tools cut through data like butter. For other formats like PDF or DOCX, we learn some remedies to convert them into plain text. Most notably, we perform optical character recognition (OCR) ."
+    "text": "Week 7: Working with Data\nUp to this point, you have acquired the skills to cut a document into pieces and then count any text elements. Without interesting data, these tools are neat but of little use. Thus, we turn to relevant data sources for computational text analysis. When dealing with plain text, your tools will cut through the data like butter. For other formats, such as PDF, we learn some tricks to convert them into plain text. In particular, we use optical character recognition (OCR).\n   \nYou can open the static code or run the code directly in your browser without any installation using Binder:\n\n Open the static code\n Run in your browser via Binder (OCR not working on Binder)"
   },
   {
     "objectID": "lectures.html#week-8-data-analysis-of-swiss-media",
     "href": "lectures.html#week-8-data-analysis-of-swiss-media",
     "title": "Lectures",
     "section": "Week 8: Data Analysis of Swiss Media",
-    "text": "Week 8: Data Analysis of Swiss Media\nAnalyzing the media discourse from the past and the present has always been one of the most exciting approaches for social science. Only recently, however, Swissdox@LiRI has introduced a simple-to-use API to assemble and download comprehensive datasets of Swiss news media. In this session, we learn about the process of data curation and data analysis using the Pandas package."
+    "text": "Week 8: Data Analysis of Swiss Media\nAnalyzing the media discourse from the past and the present has always been one of the most exciting approaches for social science. Only recently, however, Swissdox@LiRI has introduced a simple-to-use API to assemble and download comprehensive datasets of Swiss news media. In this session, we learn about the process of data curation and data analysis using the Pandas package.\n  \nYou can open the static code or run the code directly in your browser without any installation using Binder.\n\n Run in your browser via Binder\n Open the static code"
   },
   {
     "objectID": "lectures.html#week-9-ethics-and-the-evolution-of-nlp",
@@ -81,7 +81,7 @@
     "href": "lectures.html#week-10-nlp-with-python",
     "title": "Lectures",
     "section": "Week 10: NLP with Python",
-    "text": "Week 10: NLP with Python\nPython is the language of choice when it comes to advanced NLP. Have you ever wondered how the frequency of terms has evolved over the years? Or how the language differs between two groups whereby the groups may be formed by any metadata (people, organization, gender etc.)? In such an exploratory endeavour, using an interactive and visual mode is the most effective that complement basic statistics. In short, we finally arrived at the serious stuff in our journey. To make sure you don’t get lost in the forest of yet unknown concepts, you will also learn the jargon of NLP."
+    "text": "Week 10: NLP with Python\nPython is the language of choice when it comes to advanced NLP. Have you ever wondered how the frequency of terms has evolved over the years? Or how the language differs between two groups whereby the groups may be formed by any metadata (people, organization, gender etc.)? In such an exploratory endeavor, using an interactive and visual mode is the most effective that complement basic statistics. In short, we finally arrived at the serious stuff in our journey. To make sure you don’t get lost in the forest of yet unknown concepts, you will also learn the jargon of NLP."
   },
   {
     "objectID": "lectures.html#week-11-nlp-with-python-ii-working-session",

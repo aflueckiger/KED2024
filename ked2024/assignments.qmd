@@ -5,10 +5,10 @@ layout: page
 
 You have to submit two assignments to complete the seminar successfully. The purpose of the assignments is not to make the course hard to pass but rather to foster your engagement with the topics covered.
 
-| \#  | Topic                                                                         | Published        | Deadline (by midnight) | Solution               |
+| \#  | Topic                                                                         | Published        | Deadline (by midnight) | Solution                                                                                                                                  |
 |---------------|---------------|---------------|---------------|---------------|
-| 1   | [Experimenting with LLMs](assignments/assignment_1/ked2024_assignment_1.pdf)  | 22 February 2024 | 1 March 2024           | (individiual feedback) |
-| 2   | [Word Counts using Python](assignments/assignment_2/ked2024_assignment_2.pdf) | 11 April 2024    | 19 April 2024          | \-                     |
+| 1   | [Experimenting with LLMs](assignments/assignment_1/ked2024_assignment_1.pdf)  | 22 February 2024 | 1 March 2024           | (individiual feedback)                                                                                                                    |
+| 2   | [Word Counts using Python](assignments/assignment_2/ked2024_assignment_2.pdf) | 11 April 2024    | 19 April 2024          | [Example solution](https://github.com/aflueckiger/KED2024/tree/main/ked2024/assignments/assignment_2/ked2024_assignment_2_solution.ipynb) |
 
 # Mini-Project
 

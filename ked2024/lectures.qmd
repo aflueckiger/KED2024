@@ -134,7 +134,11 @@ Analyzing the media discourse from the past and the present has always been one 
 
 [{{< fa desktop size=xl >}}](lectures/html/ked2024_08.html){target="_blank"} [{{< fa file-pdf size=xl >}}](lectures/pdf/ked2024_08.pdf){target="_blank"} [{{< fa brands github size=xl >}}](https://github.com/aflueckiger/KED2024/tree/main/ked2024/lectures/md/ked2024_08.md){target="_blank"} [{{< fa video size=xl >}}](https://tube.switch.ch/videos/RI42XBvTmi){target="_blank"}
 
-You can open the static code or run the code directly in your browser without any installation using Binder. - [{{< fa brands github size=xl >}}](https://github.com/aflueckiger/KED2024/blob/main/ked2024/materials/code/ked2024_08.ipynb) Open the static code - [![Binder](https://mybinder.org/badge_logo.svg){alt="Binder"}](https://mybinder.org/v2/gh/aflueckiger/KED2024/HEAD?labpath=ked2024%2Fmaterials%2Fcode%2Fked2024_08.ipynb) Run in your browser via Binder
+You can open the static code or run the code directly in your browser without any installation using Binder.
+
+-   [{{< fa brands github size=xl >}}](https://github.com/aflueckiger/KED2024/blob/main/ked2024/materials/code/ked2024_08.ipynb) Open the static code
+
+-   [![Binder](https://mybinder.org/badge_logo.svg){alt="Binder"}](https://mybinder.org/v2/gh/aflueckiger/KED2024/HEAD?labpath=ked2024%2Fmaterials%2Fcode%2Fked2024_08.ipynb) Run in your browser via Binder
 
 ```{=html}
 <!--
@@ -163,7 +167,7 @@ Python is the language of choice when it comes to advanced NLP. Have you ever wo
 
 You can open the static code or run the code directly in your browser without any installation using Binder.
 
--   [{{< fa brands github size=](https://github.com/aflueckiger/KED2024/blob/main/ked2024/materials/code/ked2024_07.ipynb)[xl](https://github.com/aflueckiger/KED2024/blob/main/ked2024/materials/code/ked2024_10.ipynb)[ >}}](https://github.com/aflueckiger/KED2024/blob/main/ked2024/materials/code/ked2024_07.ipynb) Open the static code
+-   [{{< fa brands github size=xl >}}](https://github.com/aflueckiger/KED2024/blob/main/ked2024/materials/code/ked2024_10.ipynb) Open the static code
 
 -   [![Binder](https://mybinder.org/badge_logo.svg){alt="Binder"}](https://mybinder.org/v2/gh/aflueckiger/KED2024/HEAD?labpath=ked2024%2Fmaterials%2Fcode%2Fked2024_10.ipynb) Run in your browser via Binder
 

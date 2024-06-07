@@ -93,7 +93,7 @@ Homebrew is a powerful package manager for macOS systems. With Homebrew, you can
     brew upgrade
     ```
 
-5.  Once you’ve installed Homebrew, make Homebrew's Python the primary environment by setting the `PATH` variable. In a Terminal, run the following command to add a new `PATH` variable to the `~/.profile` file:
+5.  Once you’ve installed Homebrew, make Homebrew's Python the primary environment by setting the `PATH` variable. In a Terminal, run the following commands to add a new `PATH` variable to the `~/.profile` file:
 
     ``` bash
     echo 'export PATH="/usr/local/opt/python/libexec/bin:\$PATH"' > ~/.profile 

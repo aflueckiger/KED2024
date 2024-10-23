@@ -6,7 +6,7 @@ This repository contains all the material for the following course that I teach 
 
 The course is a gentle introduction to computational methods with a focus on text analysis. The audience are BA students of social sciences with backgrounds in various disciplines (sociology, political science, cultural studies, etc.)
 
-Check out the official course website: [https://aflueckiger.github.io/KED2024/](https://aflueckiger.github.io/KED2023/).
+Check out the official course website: [https://aflueckiger.github.io/KED2024/](https://aflueckiger.github.io/KED2024/).
 
 # If you're in the class
 
